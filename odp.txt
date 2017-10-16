@@ -1,0 +1,22 @@
+Zad. 1
+-cat -A myth.txt
+-cat -s myth.txt
+-cat -n myth.txt
+-more +/string plik.txt
+-Znak '<' umozliwia pobieranie z pliku danych i przetworzenia ich przez polecenie.
+
+Zad. 2
+-sort words.txt >  wordsSort.txt
+-sort -c words.txt
+-sort -r test2.txt > reverse-Words.txt
+-sort -f -u words.txt
+-sort -R words.txt
+
+Zad. 5
+-echo -n abcdefghij > plik - nadpisuje zawartosc plik podanym lancuchem znakow, bez przechodzenia do nowej linii.
+-cat plik - wyswietla zawartosc plik w oknie terminala.
+-exec 3<>plik - otwiera plik poprzez fd3 w celu pisania i czytania w stand. wejścia i wyjścia.
+-read -n 5 <&3 - czyta podana ilosc znakow.
+-echo -n ABC >&3 - zapisuje lancuch znakow bez przechodzenia do nowej linii.
+-exec 3>&- zamyka fd3
+-cat plik - wyswietla zmieniony plik po zamknieciu fd3.
